@@ -50,6 +50,7 @@ O projeto está organizado nos seguintes pacotes:
     [
       {
         "nome": "Nome do Fornecedor",
+        "description": "Descrição do Fornecedor",
         "cnpj": "CNPJ do Fornecedor",
         "email": "Email do Fornecedor"
       }
@@ -62,9 +63,10 @@ O projeto está organizado nos seguintes pacotes:
   - **Body** (Exemplo):
     ```json
     {
-      "nome": "Nome Atualizado",
-      "cnpj": "CNPJ Atualizado",
-      "email": "Email Atualizado"
+      "nome": "Nome do Fornecedor",
+      "description": "Descrição do Fornecedor",
+      "cnpj": "CNPJ do Fornecedor",
+      "email": "Email do Fornecedor"
     }
     ```
 
