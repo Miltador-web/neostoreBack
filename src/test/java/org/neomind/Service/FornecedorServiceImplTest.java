@@ -10,14 +10,17 @@ class FornecedorServiceImplTest {
     @Test
     public void testValidateCnpj(){
         FornecedorServiceImpl service = new FornecedorServiceImpl();
-        // CNPJ válido com máscara
-        assertTrue(service.validateCnpj("12.345.678/0001-00"));
+        // CNPJ válido com máscara e de acordo com a Receita Federal
+        assertTrue(service.validateCnpj("64.798.126/0001-36"));
 
-        // CNPJ válido sem máscara
-        assertTrue(service.validateCnpj("12345678000100"));
+        // CNPJ válido sem máscara e de acordo com a Receita Federal
+        assertTrue(service.validateCnpj("64798126000136"));
+
+        // CNPJ inválido de acordo com a Receita Federal
+        assertFalse(service.validateCnpj("64.798.126/0001-99"));
 
         // CNPJ inválido com menos de 14 dígitos
-        assertFalse(service.validateCnpj("1234567890"));
+        assertFalse(service.validateCnpj("64798126000133"));
 
         // CNPJ inválido com caracteres não numéricos
         assertFalse(service.validateCnpj("12345abc678901"));
