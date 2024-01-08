@@ -3,6 +3,8 @@
 ## Visão Geral
 Este projeto, intitulado NeoStore, utiliza Quarkus e JAX-RS para implementar uma API RESTful dedicada ao gerenciamento de fornecedores. As funcionalidades chave incluem listagem, busca, inserção, edição e exclusão de fornecedores.
 
+## Java 17
+
 ## Configuração e Execução
 1. Clone o repositório do projeto.
 2. Configure o ambiente de desenvolvimento com Java e Quarkus.
